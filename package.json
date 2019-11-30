@@ -1,0 +1,63 @@
+{
+	"name": "code-run",
+	"displayName": "Code Run",
+	"description": "Выполнение кода одной командой",
+	"icon": "./resources/logo.png",
+	"version": "1.0.0",
+	"publisher": "the-alex-mark",
+	"author": {
+		"name": "Александр Макаров",
+		"email": "the_alex_mark@mail.ru",
+		"vk": "https://vk.com/the_alex_mark"
+	},
+	"license": "ISC",
+	"engines": {
+		"vscode": "^1.40.0"
+	},
+	"activationEvents": [
+		"onCommand:code.run"
+	],
+	"main": "./main.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "code.run",
+				"title": "Выполнить",
+				"icon": {
+					"light": "./resources/run-light.svg",
+					"dark": "./resources/run-dark.svg"
+				}
+			}
+		],
+		"keybindings": [
+			{
+				"key": "f5",
+				"command": "code.run",
+				"when": "editorLangId == javascript || editorLangId == bat || resourceLangId == javascript || resourceLangId == bat"
+			}
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"group": "navigation",
+					"command": "code.run",
+					"when": "resourceLangId == javascript || resourceLangId == bat"
+				}
+			],
+			"editor/title": [
+				{
+					"group": "navigation",
+					"command": "code.run",
+					"when": "editorLangId == javascript || editorLangId == bat"
+				}
+			],
+			"explorer/context": [
+				{
+					"group": "navigation",
+					"command": "code.run",
+					"when": "resourceLangId == javascript || resourceLangId == bat"
+				}
+			]
+		}
+	}
+}
