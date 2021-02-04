@@ -9,6 +9,5 @@
 * Контекстное меню проводника: `Выполнить`
 
 ## Автор
-* [GitHub](https://github.com/the-alex-mark)
-* [Email](the_alex_mark@mail.ru)
+* [Email](mailto:the_alex_mark@mail.ru)
 * [Вконтакте](https://vk.com/the_alex_mark)
