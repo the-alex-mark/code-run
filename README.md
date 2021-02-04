@@ -10,4 +10,4 @@
 
 ## Автор
 * [Email](mailto:the_alex_mark@mail.ru)
-* [Вконтакте](https://vk.com/the_alex_mark)
+* [ВКонтакте](https://vk.com/the_alex_mark)
